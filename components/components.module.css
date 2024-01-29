@@ -1,0 +1,91 @@
+.nav, .footer {
+  background-color: var(--primary);
+  min-height: 5rem;
+  padding: 3rem;
+  color: var(--light);
+}
+.navItems {
+  font-size:1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.navItem {
+  padding-right: 1.5rem;
+}
+
+.buttonContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+.buttonPrimary,
+.buttonSecondary {
+  text-align: center;
+  padding: 20px;
+  min-width: 15rem;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  box-shadow: 3px 3px 3px #0f334340;
+}
+.buttonPrimary {
+  color: var(--primary);
+  transition: 0.3s;
+  background-color: var(--light);
+}
+.buttonSecondary {
+  color: var(--light);
+  background-color: var(--secondary);
+  transition: 0.3s;
+  /* border: 2px solid var(--secondary); */
+
+}
+.buttonPrimary:hover {
+  color: var(--light);
+  background-color: var(--secondary);
+  box-shadow: 3px 5px 5px #0f334340;
+}
+.buttonSecondary:hover {
+  color: var(--primary);
+  background-color: var(--light);
+  box-shadow: 3px 5px 5px #0f334340;
+}
+.imagePopup{
+max-width: 500px;
+aspect-ratio: 4/3;
+display: inline-block;
+border-radius: var(--border-radius)
+}
+.imageContainer{
+  display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+.heroSection{
+display: grid;
+place-items: center;
+}
+.heroContent{
+  text-align: center;
+  color: #fff;
+}
+.heroContent h1{
+  font-size: clamp(3rem, 5vw, 5rem);
+}
+.popupSection{
+  position:relative
+}
+.playButtonIcon{
+position:absolute;
+max-width: 3rem;
+border-radius: 50%;
+top:50%;
+left:46%;
+opacity: .3;
+}
+.playButtonIcon:hover{
+
+  opacity: .5;
+  }
